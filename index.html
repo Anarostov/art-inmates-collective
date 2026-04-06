@@ -4,89 +4,157 @@
   <meta charset="UTF-8">
   <title>Prisoner of the Moment Collective</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <style>
     body {
-      background: #f6f6f6;
-      color: #111;
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at top, #1a1a1c 0%, #0b0b0c 100%);
+      color: #e7e2d9;
       font-family: Georgia, "Times New Roman", serif;
-      max-width: 640px;
-      margin: 80px auto;
-      padding: 0 20px 60px;
-      line-height: 1.6;
+      line-height: 1.75;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+
+    .wrapper {
+      width: 100%;
+      max-width: 760px;
+      padding: 80px 24px 100px;
+    }
+
+    .panel {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 40px 30px 50px;
+      box-shadow: 0 0 60px rgba(0,0,0,0.6);
     }
 
     h1 {
-      font-size: 1.8em;
-      letter-spacing: 0.05em;
+      margin: 0 0 30px;
+      font-size: 2em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      margin-bottom: 30px;
+      color: #f3eee6;
     }
 
     h2 {
-      font-size: 1.1em;
+      margin: 48px 0 14px;
+      font-size: 0.85em;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      letter-spacing: 0.04em;
-      margin-top: 50px;
-      margin-bottom: 15px;
+      color: #b5a88f;
     }
 
     p {
-      margin-bottom: 18px;
+      margin: 0 0 18px;
     }
 
-    a {
-      color: #111;
-      text-decoration: none;
-      border-bottom: 1px solid #aaa;
-    }
-
-    a:hover {
-      border-bottom-color: #111;
+    .intro {
+      font-size: 1.05em;
+      color: #dcd4c6;
     }
 
     .cover {
       width: 100%;
-      max-width: 320px;
+      max-width: 380px;
       display: block;
-      margin: 20px 0 25px;
-      border: 1px solid #ddd;
+      margin: 28px 0 26px;
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 18px 50px rgba(0,0,0,0.7);
     }
 
-    .release {
-      padding-top: 10px;
+    .track {
+      margin-top: 10px;
+    }
+
+    .track-title {
+      font-size: 1.3em;
+      color: #f3eee6;
+      margin-bottom: 6px;
     }
 
     .meta {
-      color: #444;
       font-size: 0.95em;
+      color: #b5a88f;
+      margin-bottom: 16px;
+    }
+
+    .coming {
+      font-style: italic;
+      color: #c9bda8;
+    }
+
+    .links {
+      margin-top: 14px;
+    }
+
+    .links a {
+      color: #f0e7d8;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(240,231,216,0.35);
+      margin-right: 18px;
+    }
+
+    .links a:hover {
+      border-bottom-color: rgba(240,231,216,0.9);
+    }
+
+    .footer {
+      margin-top: 48px;
+      font-size: 0.9em;
+      color: #8f8574;
     }
   </style>
 </head>
+
 <body>
 
-  <h1>Prisoner of the Moment Collective</h1>
+  <div class="wrapper">
+    <div class="panel">
 
-  <p>
-    Prisoner of the Moment Collective is a music project built around songs that begin with words.
-    Each release stands on its own, shaped by its own voice, genre, and performer, while remaining
-    tied to the same central idea: the moments that trap us, mark us, or remake us.
-  </p>
+      <h1>Prisoner of the Moment Collective</h1>
 
-  <p>
-    There is no fixed lineup. Only the song, the voice it requires, and the moment it belongs to.
-  </p>
+      <p class="intro">
+        Prisoner of the Moment Collective is a music project built around songs that begin with words.
+        Each release stands on its own, shaped by its own voice, genre, and performer, while remaining
+        tied to the same central idea: the moments that trap us, distort us, or leave something behind.
+      </p>
 
-  <div class="release">
-    <h2>Current Release</h2>
+      <p>
+        There is no fixed lineup. Only the song, the voice it requires, and the moment it belongs to.
+      </p>
 
-    <img src="numb-cover.jpg" alt="Cover art for Numb by Prisoner of the Moment Collective" class="cover">
+      <h2>Current Release</h2>
 
-    <p><strong>Numb</strong></p>
-    <p class="meta">Single • Out April 17, 2026</p>
+      <!-- IMPORTANT: make sure your file name matches exactly -->
+      <img src="numb-cover.jpg" alt="Numb cover art" class="cover">
 
-    <p>
-      Streaming links will appear here on release day.
-    </p>
+      <div class="track">
+        <p class="track-title"><strong>Numb</strong></p>
+        <p class="meta">Single • Out April 17, 2026</p>
+
+        <p class="coming">
+          Streaming links will appear here on release day.
+        </p>
+
+        <!-- ADD THESE BACK WHEN LIVE -->
+        <!--
+        <div class="links">
+          <a href="YOUR_SPOTIFY_LINK">Spotify</a>
+          <a href="YOUR_APPLE_LINK">Apple Music</a>
+          <a href="YOUR_YOUTUBE_LINK">YouTube Music</a>
+        </div>
+        -->
+
+      </div>
+
+      <p class="footer">
+        Lyrics first. The rest follows.
+      </p>
+
+    </div>
   </div>
 
 </body>
